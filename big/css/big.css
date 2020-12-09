@@ -1,0 +1,192 @@
+/* BIG WEB120 */
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html,body {
+    background-color:lightslategrey;
+    font-family:'Roboto';
+}
+
+header a {
+    color:darkred;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+div.wrapper,footer {
+    width:90%;
+    margin:auto;
+    background-color:#fff;
+    overflow:auto;
+}
+
+section {
+    float:left;
+    width:64%;
+    padding-left:2.5%;
+}
+
+aside {
+    float:right;
+    width:26%;
+    padding-right:2.5%;
+}
+
+
+
+#calendar{
+    width:30%;
+    float:right;
+}
+
+h1 {
+    text-align:right;
+    color: darkred;
+    padding-top:.5em;
+    padding-bottom: .5em;
+    padding-right: .5em;
+    
+}
+
+h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    padding:.5em;
+    
+}
+
+aside h3, h2{
+    padding-left: 0;
+}
+
+aside ul{
+    list-style-type: none;
+    text-decoration: none;
+    color:darkred;
+     
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: darkred;
+    
+}
+
+aside ul li a:hover {background-color: lightgrey;}
+
+aside a {
+   list-style-type: none;
+   text-decoration: none;
+   color:darkred; 
+}
+
+aside h3{
+    padding-left: 0;
+}
+
+p {
+    margin:1em .8em;
+}
+
+div.dot iframe {
+    border:0;
+    overflow:no;
+}
+
+/* START Global Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.embed-container.agenda-view {
+    display:none;
+}
+
+/* END Global Embed Responsively Rules! */
+
+
+/* start embed calendar responsively*/
+
+#main-section{
+    width:100%;
+    
+}
+
+#calendar-section{
+    width:100%!important;
+    
+}
+
+
+footer {
+    text-align:center;
+    text-transform:uppercase;
+    clear:both;
+}
+
+footer p {
+    padding:2em;
+}
+
+footer a {
+    color:grey;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer a:hover {
+    color:white;
+    background-color:black;
+}
+
+/*hide agenda view of calandar */
+div.embed-container.phone {
+    display:none;
+}
+
+
+}
+
+aside
+
+
+/* Phat PHONE Rules! */
+@media all and (max-width:840px) {
+    div.wrapper {
+        background-color:darkgrey;
+    }
+    
+    /* Show Agenda View Calendar */
+    div.embed-container.agenda-view {
+        display:block;
+    }
+    
+    /* Hide Month View Calendar */
+    div.embed-container.desktop {
+        display:none;
+    }
+}
+
+fieldset{
+    border:none;
+}
+
+section form div{
+    margin-bottom: 10px;
+}
+

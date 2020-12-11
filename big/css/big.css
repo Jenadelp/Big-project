@@ -93,7 +93,7 @@ p {
 
 div.dot iframe {
     border:0;
-    overflow:no;
+    overflow:hidden;
 }
 
 /* START Global Embed Responsively Rules! */
@@ -160,17 +160,18 @@ div.embed-container.phone {
 }
 
 
-}
+
 
 aside
 
 
 /* Phat PHONE Rules! */
+
 @media all and (max-width:840px) {
     div.wrapper {
         background-color:darkgrey;
     }
-    
+
     /* Show Agenda View Calendar */
     div.embed-container.agenda-view {
         display:block;
